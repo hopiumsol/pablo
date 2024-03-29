@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Pablo on sol</title>
+  <script src="ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div id="splashscreen">
+
+<div class="first">
+<h1 style="padding-top:30vh;">PABLO THE RACE CAT</h1>
+<br>
+<a href="#" class="enter_link"><img class="comein" src="logo_trim.jpg"></a>
+<br>
+<h1>ENTER</h1>
+</div>
+
+</div>
+
+<!-- page starts -->
+<div class="banner">
+    <div class="banner-text">PABLO</div>
+    <div class="socials">
+        <div class="socials_container"><a target="_blank" href="https://twitter.com/pablocat_sol"><img class="socialimg" src="x-png.png"></a></div>
+        <div class="socials_container"><a target="_blank" href="https://t.me/pablocat_sol"><img class="socialimg" src="tg-png.png"></a></div>
+        <div class="socials_container"><a target="_blank" href="https://www.instagram.com/pablo_theracecat/?hl=en"><img class="socialimg" src="insta-png.png"></a></div>
+    </div>
+</div>
+
+<div class="vids">
+ <video autoplay="" muted="" controls="">
+  <source src="01.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="02.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="03.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="04.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="05.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="06.mp4" type="video/mp4">
+</video>
+ <video autoplay="" muted="" controls="">
+  <source src="07.mp4" type="video/mp4">
+</video> 
+ <video autoplay="" muted="" controls="">
+  <source src="08.mp4" type="video/mp4">
+</video> 
+</div>
+
+<audio id="music">
+
+  <source src="pablo.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function PlayMusic() {
+
+  var play=document.getElementById("music");
+  play.play();
+}
+
+$(document).ready(function(){
+  setTimeout(PlayMusic,2000);
+})
+
+</script>
+
+
+<style>
+    #splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+    text-align:center;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.vids {margin:0 auto;width:90vw;text-align:center;display:none;}
+html {
+    animation-name: background;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+
+
+
+
+@keyframes background {
+    0%    {background-color: white  ;}
+    5%    {background-color: black  ;}
+    10%   {background-color: pink   ;}
+    15%   {background-color: red    ;}
+    20%   {background-color: green  ;}
+    25%   {background-color: blue   ;}
+    30%   {background-color: purple ;}
+    35%   {background-color: yellow ;}
+    40%   {background-color: brown  ;}
+    45%   {background-color: orange ;}
+    50%   {background-color: grey   ;}
+    55%   {background-color: green  ;}
+    60%   {background-color: black  ;}
+    65%   {background-color: white  ;}
+    70%   {background-color: red    ;}
+    75%   {background-color: purple ;}
+    80%   {background-color: green  ;}
+    85%   {background-color: pink   ;}
+    90%   {background-color: yellow ;}  
+    95%   {background-color: brown  ;}
+    100%  {background-color: orange ;}
+}
+
+@keyframes color {
+    0%    {color: orange ;}
+    5%    {color: white  ;}
+    10%   {color: black  ;}
+    15%   {color: pink   ;}
+    20%   {color: red    ;}
+    25%   {color: green  ;}
+    30%   {color: blue   ;}
+    35%   {color: purple ;}
+    40%   {color: yellow ;}
+    45%   {color: brown  ;}
+    50%   {color: orange ;}
+    55%   {color: grey   ;}
+    60%   {color: green  ;}
+    65%   {color: black  ;}
+    70%   {color: white  ;}
+    75%   {color: red    ;}
+    80%   {color: purple ;}
+    85%   {color: green  ;}
+    90%   {color: pink   ;}  
+    95%   {color: yellow ;}
+    100%  {color: brown  ;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first {width:100vw;overflow:hidden;}
+.socials{float:right;padding-top:15px;padding-right:40px;overflow:hidden;}
+.socials_container {float:right;}
+img.socialimg{width:60px;padding:0;}
+.banner-text {color:white;font-size:30px;padding-top:20px;padding-left:40px;width:150px;float:left;animation-name: color;animation-duration: .6s;animation-delay: 0s;animation-iteration-count: infinite;}
+img.comein {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+*{padding:0;margin:0;font-family:'Arial';}
+
+.banner {width:100vw;height:80px;background:black;}
+h1 {margin:0;padding:0;}
+
+
+img.comein {
+  width:250px;
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    video {width:100vw;}
+    .vids {width:100vw;}
+    .socials {padding-right: 10px;}
+    .banner-text {padding-left:10px;}
+} 
+</style>
+
+
+<script>
+    $('.enter_link').on('click', function() {
+    //console.log("clicked")
+    $('#splashscreen').css({display:"none"});
+    $('.vids').css({display:"block"});
+});
+</script>
+
+</body>
+</html>
